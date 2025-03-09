@@ -1,32 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Navbar.css'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom';
+
+
 
 const Navbar = () => {
-    const navbarItems = [
-        { id: 1, title: "Home"},
-        { id: 2, title: "Menu"},
-        { id: 3, title: "Mobile-App" },
-        { id: 4, title: "Contact"},
-      ];
- 
-    const[menu,setMenu] = useState(navbarItems[0])
+   
+    const[menu,setMenu] = useState('menu')
     return (
         <div className='navbar'>
             <img src={assets.logo} alt="" />
             <ul className='navbar-menu'>
-                {
-                    navbarItems.map((item)=>(
-                        <li key={item.id} onClick={()=>setMenu(item)} className={menu.id === item.id ?'active':'' }>
-                            {item.title}
-                        </li>
-                    ))
-                }
+                <li onClick={()=>setMenu('Home')} className={menu === 'Home'?'active':''}><Link to='/'>Home</Link></li>
+                <li onClick={()=>setMenu('Menu')} className={menu === 'Menu'?'active':''}><Link to='/menu'>Menu</Link></li>
+                <li onClick={()=>setMenu('Mobile-App')} className={menu === 'Mobile-App'?'active':''}><Link to='/mobile-app'>Mobile-App</Link></li>
+                <li onClick={()=>setMenu('Contact Us')} className={menu === 'Contact Us'?'active':''}><Link to='/contact'>Contact Us</Link></li>
+          
             </ul>
            
             <div className="navbar-right">
                 <img src={assets.search_icon} alt="" />
-                <div>
+                <div className='navbar-search-icon'>
                     <img src={assets.basket_icon} alt="" />
                     <div className='dot'></div>
                 </div>

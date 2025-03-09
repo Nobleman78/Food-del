@@ -40,9 +40,24 @@
     width: 25px;
     height: 25px;
 
+
 }
 .navbar .active{
     border-bottom: 2px solid red;
     padding-bottom: 2px;
+
+}
+.navbar-search-icon{
+    position: relative;
     
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+
 }
