@@ -22,8 +22,8 @@ const Menu = () => {
                     })
                 }
             </div>
-            <FoodDisplay catagory={category}></FoodDisplay>
             <hr />
+            <FoodDisplay catagory={category}></FoodDisplay>
           
         </div>
     );

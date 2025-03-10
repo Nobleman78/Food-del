@@ -8,6 +8,7 @@ import Placeorder from './Pages/Placeorder/Placeorder'
 import Menu from './Pages/Menu/Menu'
 import Contact from './Pages/Contact/Contact'
 import MobileApp from './Pages/MobileApp/MobileApp'
+import Footer from './components/Footer/Footer'
 function App() {
   return (
     <div className='app' >
@@ -21,6 +22,7 @@ function App() {
           <Route path='mobile-app' element={<MobileApp></MobileApp>}></Route>
           <Route path='/order' element={<Placeorder></Placeorder>}></Route>
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
     </div>
 
