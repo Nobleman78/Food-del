@@ -1,9 +1,18 @@
-import React from 'react';
+
 import './Header.css'
+import backGroundImage from '../../assets/header_img.png'
+import { Link } from 'react-router-dom';
 const Header = () => {
+    
     return (
-        <div>
-            
+        <div className='header'>
+            <img src={backGroundImage} alt="" />
+            <div className='header-contents'>
+                <h1 className='text-5xl text-white '>Order Your Favaourite food here.</h1>
+                <p className='text-white text-lg text-justify'>Welcome to your culinary companion! Explore a world of flavors through our curated collection of recipes, from comforting classics to adventurous new tastes.</p>
+                <button className='btn text-white'><Link to='/menu'>View Menu</Link></button>
+
+            </div>
         </div>
     );
 };
