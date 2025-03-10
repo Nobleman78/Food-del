@@ -8,7 +8,7 @@ const Home = () => {
         <div>
            <Header/>
            <Menu />
-           <FoodDisplay/>
+           
         </div>
     );
 };

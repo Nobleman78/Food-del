@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Menu.css'
 import { menu_list } from '../../assets/assets';
+import FoodDisplay from '../../components/FoodDisplay/FoodDisplay';
 
 const Menu = () => {
-    const[catagory,setCatagory] = useState('All')
-    console.log(catagory);
+    const[category,setcategory] = useState('All')
     return (
         <div className='explore-menu flex flex-col gap-5 '>
             <h1 className='text-xl font-bold '>Explore Our Menu</h1>
@@ -13,8 +13,8 @@ const Menu = () => {
                 {
                     menu_list.map((item,index)=>{
                         return(
-                            <div onClick={()=>setCatagory(prev=>prev===item.menu_name?'All':item.menu_name)} key={index} className='explore-menu-list-item'>
-                                <img className={item.menu_name===catagory?'active':''} src={item.menu_image} alt="" />
+                            <div onClick={()=>setcategory(prev=>prev===item.menu_name?'All':item.menu_name)} key={index} className='explore-menu-list-item'>
+                                <img className={item.menu_name===category?'active':''} src={item.menu_image} alt="" />
                                 <p className=' cursor-pointer ' >{item.menu_name}</p>
 
                             </div>
@@ -22,7 +22,9 @@ const Menu = () => {
                     })
                 }
             </div>
+            <FoodDisplay catagory={category}></FoodDisplay>
             <hr />
+          
         </div>
     );
 };
