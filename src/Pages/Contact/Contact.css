@@ -1,0 +1,74 @@
+.contact-page{
+    height: 550px;
+
+}
+.contact-page .contact-header-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.contact-page .contact-header-text{
+    text-align: center;
+    font-size: 18px;
+}
+.contact-contents{
+    padding: 10px 20px;
+    display: flex;
+    margin-top: 50px;
+    gap: 70px;
+    
+    
+  
+}
+.contact-left-part{
+    background: black;
+    color: white;
+    padding: 20px 30px;
+    width: 30%;
+    border-radius: 10px;
+   
+    
+}
+.contact-left-part-item{
+    margin-top: 30px;
+   
+}
+.contact-left-part-item .phone-section span{
+    margin-left: 5px;
+    
+}
+.contact-left-part-item .email-section p{
+    margin-left: 5px;
+}
+.contact-left-part-item .locaton-section p{
+    margin-left: 5px;
+}
+.location-icon{
+    width: 30px;
+    margin-top: -45px;
+}
+.contact-right-part input{
+    padding: 7px 0px;
+}
+.contact-right-part-end{
+    margin-top: 10px;
+}
+.send-btn{
+    right: 10px;
+    border: 1px solid red;
+}
+.send-message-btn{
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 7px 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    width: 30%;
+    right: 0px;
+    top: 100%;
+    cursor: pointer;
+
+    
+}

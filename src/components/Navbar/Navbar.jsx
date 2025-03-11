@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import './Navbar.css'
 import { assets } from '../../assets/assets'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 const Navbar = () => {
-   
+    const navigate = useNavigate();
     const[menu,setMenu] = useState('menu')
     return (
         <div className='navbar'>
-            <img className='logo' src={assets.logo} alt="" />
+            <img onClick={()=>navigate('/')}  className='cursor-pointer logo' src={assets.logo} alt=""></img>
             <ul className='navbar-menu'>
                 <li onClick={()=>setMenu('Home')} className={menu === 'Home'?'active':''}><Link to='/'>Home</Link></li>
                 <li onClick={()=>setMenu('Menu')} className={menu === 'Menu'?'active':''}><Link to='/menu'>Menu</Link></li>
