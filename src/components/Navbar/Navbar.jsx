@@ -10,12 +10,12 @@ const Navbar = () => {
     const[menu,setMenu] = useState('menu')
     return (
         <div className='navbar'>
-            <img src={assets.logo} alt="" />
+            <img className='logo' src={assets.logo} alt="" />
             <ul className='navbar-menu'>
                 <li onClick={()=>setMenu('Home')} className={menu === 'Home'?'active':''}><Link to='/'>Home</Link></li>
                 <li onClick={()=>setMenu('Menu')} className={menu === 'Menu'?'active':''}><Link to='/menu'>Menu</Link></li>
                 <li onClick={()=>setMenu('Mobile-App')} className={menu === 'Mobile-App'?'active':''}><Link to='/mobile-app'>Mobile-App</Link></li>
-                <li onClick={()=>setMenu('Contact Us')} className={menu === 'Contact Us'?'active':''}><Link to='/contact'>Contact Us</Link></li>
+                <li onClick={()=>setMenu('Contact ')} className={menu === 'Contact '?'active':''}><Link to='/contact'>Contact </Link></li>
           
             </ul>
            

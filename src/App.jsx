@@ -11,20 +11,24 @@ import MobileApp from './Pages/MobileApp/MobileApp'
 import Footer from './components/Footer/Footer'
 function App() {
   return (
-    <div className='app' >
-      <BrowserRouter>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path='/' element={<Home></Home>}></Route>
-          <Route path='menu' element={<Menu></Menu>}></Route>
-          <Route path='/cart' element={<Cart></Cart>}></Route>
-          <Route path='/contact' element={<Contact></Contact>}></Route>
-          <Route path='mobile-app' element={<MobileApp></MobileApp>}></Route>
-          <Route path='/order' element={<Placeorder></Placeorder>}></Route>
-        </Routes>
-        <Footer></Footer>
-      </BrowserRouter>
-    </div>
+    <>
+      <div className='app' >
+        <BrowserRouter>
+          <Navbar></Navbar>
+          <Routes>
+            <Route path='/' element={<Home></Home>}></Route>
+            <Route path='menu' element={<Menu></Menu>}></Route>
+            <Route path='/cart' element={<Cart></Cart>}></Route>
+            <Route path='/contact' element={<Contact></Contact>}></Route>
+            <Route path='mobile-app' element={<MobileApp></MobileApp>}></Route>
+            <Route path='/order' element={<Placeorder></Placeorder>}></Route>
+          </Routes>
+
+        </BrowserRouter>
+
+      </div>
+      <Footer></Footer>
+    </>
 
   )
 }

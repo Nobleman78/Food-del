@@ -7,7 +7,7 @@ const Menu = () => {
     const[category,setcategory] = useState('All')
     return (
         <div className='explore-menu flex flex-col gap-5 '>
-            <h1 className='text-xl font-bold '>Explore Our Menu</h1>
+            <h1 className='text-xl text-justify font-bold '>Explore Our Menu</h1>
             <p className='max-w[60%] explore-menu-text'>Browse our menu and find your next favorite dish. We’ve got something for everyone. Simple, delicious, and made just for you.</p>
             <div className="explore-menu-list flex justify-between  items-center gap-8 text-center ">
                 {

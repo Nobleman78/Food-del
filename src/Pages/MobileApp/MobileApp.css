@@ -1,0 +1,24 @@
+.app-download p{
+    margin-top: 20px;
+    
+   
+    
+}
+.app-download-plaforms{
+    margin-top: 30px;
+    gap: max(2vw,10px);
+}
+.app-download-plaforms img{
+    transition: 0.4s;
+    width: 150px;
+}
+.app-download-plaforms img:hover{
+    transform: scale(1.1);
+}
+@media(max-width:750px){
+    .app-download {
+        margin: auto auto;
+        text-align: center;
+    }
+    
+}

@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className='footer-content-left flex flex-col items-start gap-5'>
                     <img src={assets.logo} alt="" />
                     <p className='text-white '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ratione?</p>
-                    <div className="footer-social-icons  flex  gap-3">
+                    <div className="footer-social-icons  flex  gap-3 cursor-pointer">
                         <img src={assets.facebook_icon} alt="FaceBook Icon" />
                         <img src={assets.twitter_icon} alt="Twitter Icon" />
                         <img src={assets.linkedin_icon} alt="Linkdin Icon" />
@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
                 <div className='footer-content-center flex flex-col items-start gap-5'>
                     <h2 className='text-white text-2xl'>Company</h2>
-                    <ul className='grid gap-2 text-white'>
+                    <ul className='grid gap-2 text-white cursor-pointer'>
                         <li>Home</li>
                         <li>About Us</li>
                         <li>Delivery</li>
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className='footer-content-right flex flex-col items-start gap-5'>
                     <h2 className='text-white text-2xl'>Get In Touch</h2>
-                    <ul className='text-white grid gap-2'>
+                    <ul className='text-white grid gap-2 cursor-pointer'>
                         <li>+8801783672349</li>
                         <li>food@gmail.com</li>
                     </ul>
