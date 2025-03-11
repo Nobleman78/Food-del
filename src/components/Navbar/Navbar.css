@@ -5,6 +5,13 @@
     align-items: center;
 
 }
+.fixed{
+    position: fixed;
+    top: 0px;
+    width: 80%;
+    z-index: 1000;
+    background: #fff;
+}
 .navbar-menu{
     display: flex;
     gap: 20px;

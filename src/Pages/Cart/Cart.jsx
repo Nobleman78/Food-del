@@ -3,7 +3,7 @@ import './Cart.css'
 const Cart = () => {
     return (
         <div>
-            <h2>Welcome to cart page</h2>
+            <h2>This Page is under development....</h2>
         </div>
     );
 };

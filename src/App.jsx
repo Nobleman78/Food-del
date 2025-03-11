@@ -9,6 +9,8 @@ import Menu from './Pages/Menu/Menu'
 import Contact from './Pages/Contact/Contact'
 import MobileApp from './Pages/MobileApp/MobileApp'
 import Footer from './components/Footer/Footer'
+import Login from './components/Account/Login'
+import Search from './Pages/Search/Search'
 function App() {
   return (
     <>
@@ -22,6 +24,9 @@ function App() {
             <Route path='/contact' element={<Contact></Contact>}></Route>
             <Route path='mobile-app' element={<MobileApp></MobileApp>}></Route>
             <Route path='/order' element={<Placeorder></Placeorder>}></Route>
+            <Route path='/login' element={<Login></Login>}></Route>
+            <Route path='/search' element={<Search></Search>}></Route>
+
           </Routes>
 
         </BrowserRouter>
