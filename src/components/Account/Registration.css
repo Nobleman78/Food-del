@@ -1,0 +1,79 @@
+.registration-container{
+    width: 40%;
+    margin: auto;
+    height: 450px;
+ 
+}
+.form-container{
+    padding: 10px 20px;
+    height: 420px;
+ 
+}
+.register-linking{
+    margin-top: 10px;
+}
+
+.login-with-google{
+    margin-top: 10px;
+    border: 1px solid rgb(248, 246, 246);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px ;
+    background: rgb(248, 246, 246);
+}
+
+.email-container{
+    margin-top: 20px;
+    
+}
+.email-container .email-input{
+    margin-top: 10px;
+    
+}
+.password-container{
+    margin-bottom: 20px;
+}
+.password-container .email-input{
+    margin-top: 10px;
+}
+
+.login-btn{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid tomato;
+    background: tomato;
+    border-radius: 5px;
+    color: white;
+}
+@media(max-width:900px){
+    .registration-container{
+        width: 60%;
+        margin: auto;
+        height: 450px;
+     
+    }
+    .email-input{
+        width: 100%;
+    }
+    .password-input{
+        width: 100%;
+    }
+}
+@media(max-width:750px){
+    .login-container{
+        width: 100%;
+        margin: auto;
+        height: 450px;
+     
+    }
+    .email-input{
+        width: 100%;
+    }
+    .password-input{
+        width: 100%;
+    }
+   
+
+
+}

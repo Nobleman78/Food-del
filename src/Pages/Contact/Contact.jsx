@@ -2,40 +2,41 @@ import React from 'react';
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { FaLocationArrow } from "react-icons/fa6";
-import { Checkbox } from '@mui/material';
 import './Contact.css'
 const Contact = () => {
 
-    const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
     return (
-        <div className='contact-page  '>
+        <div className='contact-page'>
             <h2 className='contact-header-title'>Contact Us</h2>
             <p className='contact-header-text '>Any question or remarks? Just write us a message!</p>
-            <div className=' h-[500px]'>
+            <div className='contact-container'>
                 <div className='contact-contents '>
-                    <div className='contact-left-part grid gap-10 '>
-                        <div>
-                            <h2 className='text-2xl'>Contact Information</h2>
-                            <p>Say something to start a live chat!</p>
+                    <div className='contact-left-part'>
+                        <div className='grid gap-10 '>
+                            <div>
+                                <h2 className='text-2xl'>Contact Information</h2>
+                                <p>Say something to start a live chat!</p>
+                            </div>
+                            <div className='contact-left-part-item lg:grid gap-7'>
+                                <div className='flex items-center phone-section'>
+                                    <FaPhoneVolume className='phone-icon'></FaPhoneVolume>
+                                    <span>+1012 3456 789</span>
+
+                                </div>
+                                <div className='flex items-center email-section'>
+                                    <MdOutlineMail className='email-icon'></MdOutlineMail>
+                                    <p>demo@gmail.com</p>
+                                </div>
+                                <div className='flex items-center locaton-section'>
+                                    <FaLocationArrow className='email-icon'></FaLocationArrow>
+                                    <p>132 Dartmouth Street</p>
+                                </div>
+
+
+                            </div>
+
                         </div>
-                        <div className='contact-left-part-item grid gap-7'>
-                            <div className='flex items-center phone-section'>
-                                <FaPhoneVolume></FaPhoneVolume>
-                                <span>+1012 3456 789</span>
-
-                            </div>
-                            <div className='flex items-center email-section'>
-                                <MdOutlineMail></MdOutlineMail>
-                                <p>demo@gmail.com</p>
-                            </div>
-                            <div className='flex items-center locaton-section'>
-                                <FaLocationArrow className='location-icon'></FaLocationArrow>
-                                <p>132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
-                            </div>
-
-
-                        </div>
-
                     </div>
                     <div className='contact-right-part grid w-[500px]  '>
                         <div className='contact-right-part-first flex gap-5 '>
@@ -65,7 +66,9 @@ const Contact = () => {
                         <div className='contact-right-part-end grid gap-5 relative '>
                             <h2>Select Subject?</h2>
                             <div className='flex items-center gap-3'>
-                                <span><Checkbox {...label} />General Enquiry</span>
+                                <input type="checkbox"/>
+                                <span>General Enquiry</span>
+                                <input type="checkbox"/>    
                                 <span>Deep Enquiry</span>
                             </div>
 

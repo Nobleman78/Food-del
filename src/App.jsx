@@ -11,6 +11,7 @@ import MobileApp from './Pages/MobileApp/MobileApp'
 import Footer from './components/Footer/Footer'
 import Login from './components/Account/Login'
 import Search from './Pages/Search/Search'
+import Registration from './components/Account/Registration'
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
             <Route path='mobile-app' element={<MobileApp></MobileApp>}></Route>
             <Route path='/order' element={<Placeorder></Placeorder>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
+            <Route path='/registration' element={<Registration></Registration>}></Route>
             <Route path='/search' element={<Search></Search>}></Route>
 
           </Routes>

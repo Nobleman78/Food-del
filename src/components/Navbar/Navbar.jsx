@@ -55,6 +55,7 @@ const Navbar = () => {
                         <div className='dot'></div>
                     </div>
                     <button><Link to="/login">Login</Link></button>
+                  
                 </div>
 
                 <div className={`absolute md:hidden top-17 left-0 w-full  bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform

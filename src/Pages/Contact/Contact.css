@@ -2,6 +2,9 @@
     height: 550px;
 
 }
+.contact-container{
+    height: 550px;
+}
 .contact-page .contact-header-title{
     text-align: center;
     font-size: 30px;
@@ -16,9 +19,7 @@
     padding: 10px 20px;
     display: flex;
     margin-top: 50px;
-    gap: 70px;
-    
-    
+    gap: 70px;   
   
 }
 .contact-left-part{
@@ -44,10 +45,10 @@
 .contact-left-part-item .locaton-section p{
     margin-left: 5px;
 }
-.location-icon{
+/* .location-icon{
     width: 30px;
     margin-top: -45px;
-}
+} */
 .contact-right-part input{
     padding: 7px 0px;
 }
@@ -71,4 +72,113 @@
     cursor: pointer;
 
     
+}
+@media(max-width:1050px){
+    .contact-page{
+        height: 650px;
+    
+    }
+    .contact-contents{
+        padding: 5px 0px;
+        display: grid;
+        margin-top:30px;
+        gap: 20px; 
+        
+    }   
+    .contact-left-part{
+        background: black;
+        color: white;
+        width: 100%;
+        padding: 10px 25px;
+        text-align: center;
+        border-radius: 10px;
+        gap: 5px;
+        
+    } 
+    .contact-left-part-item{
+        display: flex;
+    }
+    .send-message-btn{
+        top: 135px;
+        right: -100px;
+    }
+  
+    
+}
+@media(max-width:750px){
+    .contact-page{
+        height: 1100px;
+    
+    }
+    .contact-contents{
+        padding: 5px 0px;
+        display: grid;
+        margin-top:20px;
+        gap: 10px; 
+    }
+   
+    .contact-left-part{
+        background: black;
+        color: white;
+        width: 100%;
+        padding: 10px 25px;
+        text-align: center;
+        border-radius: 10px;
+        gap: 5px;
+        height: 450px;
+
+    }
+    .contact-left-part-item{
+        width: 100%;
+        display: grid;
+    }
+    .phone-icon{
+        width: 100%;
+        margin-bottom: 7px;
+        font-size: 25px;
+    }
+    .contact-left-part-item .phone-section{
+        text-align: center;
+        display: grid;
+        justify-content: center;
+       
+    }
+    .email-icon{
+        width: 100%;
+        font-size: 25px;
+    }
+    .contact-left-part-item .email-section{
+        text-align: center;
+        display: grid;
+        
+    }
+    .location-icon{
+        width: 100%;
+        font-size: 20px;
+    }
+    .contact-left-part-item .locaton-section{
+        display: grid;
+        text-align: center;
+    }
+    .contact-right-part{
+        margin-top: 30px;
+        width: 100%;
+        padding: 5px 20px;
+       
+    }
+    .contact-right-part-first{
+      display: grid;
+      width: 50%;
+      gap: 0px;
+    }
+    .contact-right-part-second{
+        display: grid;
+        width: 50%;
+        gap: 10px;
+        margin-top:-30px;
+    }
+    .send-message-btn{
+        width: 50%;
+    }
+   
 }
