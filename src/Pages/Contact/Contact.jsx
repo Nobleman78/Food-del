@@ -65,7 +65,7 @@ const Contact = () => {
                         </div>
                         <div className='contact-right-part-end grid gap-5 relative '>
                             <h2>Select Subject?</h2>
-                            <div className='flex items-center gap-3'>
+                            <div className='flex items-center gap-3 enquiry'>
                                 <input type="checkbox"/>
                                 <span>General Enquiry</span>
                                 <input type="checkbox"/>    
