@@ -5,14 +5,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { IoMenuOutline } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
+import Food_Logo from '../../assets/Food Logo.svg'
 
 
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    if (open) {
-        console.log('Button Clicked')
-    }
+   
 
     const navref = useRef();
     const navigate = useNavigate();
@@ -27,7 +26,7 @@ const Navbar = () => {
             else {
                 navref.current.classList.remove('fixed')
             }
-            console.log(position)
+         
         })
     })
 
@@ -39,7 +38,7 @@ const Navbar = () => {
                 <div onClick={() => setOpen(!open)} className='md:hidden'>
                     <IoMenuOutline className='cursor-pointer text-xl' />
                 </div>
-                <img  onClick={() => navigate('/')} className='cursor-pointer logo' src={assets.logo} alt=""></img>
+                <img  onClick={() => navigate('/')} className='cursor-pointer logo' src={Food_Logo} alt=""></img>
                 <ul className='navbar-menu'>
                     <li onClick={() => setMenu('Home')} className={menu === 'Home' ? 'active' : ''}><Link to='/'>Home</Link></li>
                     <li onClick={() => setMenu('Menu')} className={menu === 'Menu' ? 'active' : ''}><Link to='/menu'>Menu</Link></li>
