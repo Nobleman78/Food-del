@@ -61,7 +61,7 @@
     }
 }
 @media(max-width:750px){
-    .login-container{
+    .registration-container{
         width: 100%;
         margin: auto;
         height: 450px;

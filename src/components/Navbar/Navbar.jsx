@@ -1,18 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Navbar.css'
 import { assets } from '../../assets/assets'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { IoMenuOutline } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import Food_Logo from '../../assets/Food Logo.svg'
+import { RxCross2 } from "react-icons/rx";
+
 
 
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-
-
     const navref = useRef();
     const navigate = useNavigate();
     const [menu, setMenu] = useState('menu')
@@ -35,9 +35,7 @@ const Navbar = () => {
     return (
         <div ref={navref} className='nav-wrapper'>
             <div className='navbar'>
-                <div onClick={() => setOpen(!open)} className='md:hidden'>
-                    <IoMenuOutline className='cursor-pointer text-xl' />
-                </div>
+                <IoMenuOutline onClick={() => setOpen(!open)} className='cursor-pointer md:hidden text-xl' />
                 <img onClick={() => navigate('/')} className='cursor-pointer logo' src={Food_Logo} alt=""></img>
                 <ul className='navbar-menu'>
                     <li onClick={() => setMenu('Home')} className={menu === 'Home' ? 'active' : ''}><Link to='/'>Home</Link></li>
@@ -56,16 +54,22 @@ const Navbar = () => {
                     <button><Link to="/login">Login</Link></button>
 
                 </div>
+                <div className={`absolute top-0 left-0 bottom-0  overflow-hidden bg-white transition-all ${open ? 'w-full h-60  z-10 ' : 'w-0'}`}>
+                    <div className='flex flex-col text-gray-600  px-5'>
+                        <div onClick={() => setOpen(false)} className='flex items-center gap-4 mt-2 mb-2'>
+                            <RxCross2 className='text-2xl' />
 
-                <div className={`absolute md:hidden top-17 left-0 w-full  bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform
-                    ${open ? "opacity-100 z-10" : "opacity-0"}`}
-                    style={{ transition: 'transform 0.3s ease,opacity 0.3s ease' }}>
-                    <Link to='/'><li className='list-none w-full text-center hover:bg-sky-400 hover:text-white transition-all cursor-pointer '>Home</li></Link>
-                    <Link to='/menu'><li className='list-none w-full text-center hover:bg-sky-400 hover:text-white transition-all cursor-pointer '>Menu</li></Link>
-                    <Link to='/mobile-app'><li className='list-none w-full text-center hover:bg-sky-400 hover:text-white transition-all cursor-pointer '>Mobile-App</li></Link>
-                    <Link to='/contact'><li className='list-none w-full text-center hover:bg-sky-400 hover:text-white transition-all cursor-pointer '>Contact</li></Link>
+                        </div>
+                        <NavLink onClick={() => setOpen(!open)} to='/' className=' py-1 px-1'>Home</NavLink>
+                        <NavLink onClick={() => setOpen(!open)} to='/menu' className=' py-1 px-1'>Menu</NavLink>
+                        <NavLink onClick={() => setOpen(!open)} to='/mobile-app' className=' px-1 py-1'>Mobile-App</NavLink>
+                        <NavLink onClick={() => setOpen(!open)} to='/contact' className=' px-1 py-1'>Contact</NavLink>
+
+                    </div>
 
                 </div>
+
+
 
 
 
