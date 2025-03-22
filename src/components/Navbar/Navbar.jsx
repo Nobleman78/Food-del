@@ -54,7 +54,7 @@ const Navbar = () => {
                     <button><Link to="/login">Login</Link></button>
 
                 </div>
-                <div className={`absolute top-0 left-0 bottom-0  overflow-hidden bg-white transition-all ${open ? 'w-full h-60  z-10 ' : 'w-0'}`}>
+                <div className={`absolute top-0 left-0 bottom-0  overflow-hidden bg-white transition-all ${open ? 'w-full h-50  z-10 ' : 'w-0'}`}>
                     <div className='flex flex-col text-gray-600  px-5'>
                         <div onClick={() => setOpen(false)} className='flex items-center gap-4 mt-2 mb-2'>
                             <RxCross2 className='text-2xl' />
